@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp"
+    tools:context=".MainActivity">
+
+    <SeekBar
+        android:id="@+id/duration_bar"
+        android:layout_width="223dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="188dp"
+        android:max="30"
+        android:progress="15" />
+
+    <TextView
+        android:id="@+id/durationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="214dp"
+        android:text="Duration: 15min" />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="354dp"
+        android:layout_height="276dp"
+        android:layout_centerHorizontal="true"
+        android:timePickerMode="spinner" />
+
+    <Button
+        android:id="@+id/buttonAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timePicker"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="290dp"
+        android:text="Set Alarm" />
+
+    <TextView
+        android:id="@+id/brightnessText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="346dp"
+        android:text="Brightness: 100%" />
+
+    <SeekBar
+        android:id="@+id/color_bar"
+        android:layout_width="223dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="250dp"
+        android:max="255"
+        android:progress="127" />
+
+    <SeekBar
+        android:id="@+id/brightness_bar"
+        android:layout_width="223dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="320dp"
+        android:max="255"
+        android:progress="255" />
+
+    <TextView
+        android:id="@+id/colorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="277dp"
+        android:text="Color: 50%" />
+</RelativeLayout>
